@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumbini ICT Campus</title>
+  <style>
+    :root {
+      --primary: #f1aa12;
+      --darkblue: #063b6c;
+      --text-dark: #333;
+      --text-light: #777;
+      --bg-light: #f9f9f9;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: var(--bg-light);
+      color: var(--text-dark);
+    }
+
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 10px 5%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    nav {
+      background: var(--darkblue);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 8px 15px;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background: var(--primary);
+      transition: 0.3s;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 30px 5%;
+    }
+
+    .main-content {
+      flex: 2;
+      padding-right: 30px;
+    }
+
+    .sidebar {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .section-title {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .banner {
+      max-width: 100%;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+
+    .card-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      padding: 30px 5%;
+    }
+
+    .card {
+      max-width: 500px;
+      margin: 20px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .main-content {
+        padding-right: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div>📧 mailto@lict.edu.np</div>
+    <div>📍 Gaindakot-4, Kaligandaki Chowk</div>
+    <div>📞 078 502188, 078 503206</div>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Courses</a>
+    <a href="#">Our Team</a>
+    <a href="#">Syllabus</a>
+    <a href="#">Gallery</a>
+    <a href="#">Info Notice</a>
+    <a href="#">Events</a>
+    <a href="#">QAA</a>
+  </nav>
+
+  <div class="container">
+    <div class="main-content">
+      <h2 class="section-title">Home</h2>
+      <img src="../images/lictbaner.png" class="banner" alt="Lumbini ICT Banner">
+
+      <p>
+        Lumbini ICT Campus is one of the leading reputed and renowned institutions well known for never-ending dedication and devotion to quality education and a candid temple of knowledge and wisdom. It aims to help the students make the most of themselves in academic and social perspectives. Lumbini ICT Campus caters bachelor level of program on:
+      </p>
+
+      <ul>
+        <li>B.Sc CSIT (Bachelor in Science, Computer Science and Information Technology)</li>
+        <li>BIM (Bachelor of Information Management)</li>
+        <li>BCA (Bachelor of Computer Application)</li>
+        <li>BHM (Bachelor of Hotel Management)</li>
+      </ul>
+
+      <p>
+        Besides academics, we offer several extra curriculum packages tailored for the global market. Expertise from within and outside Nepal are regularly invited for guidance.
+      </p>
+    </div>
+
+    <div class="sidebar">
+      <h3>Recent Posts</h3>
+      <ul>
+        <li><a href="#">Admitted Student List (CSIT 2079)</a></li>
+        <li><a href="#">Admission for B.Sc. CSIT (2078 intake)</a></li>
+        <li><a href="#">CSIT Mock Test Result</a></li>
+        <li><a href="#">CMAT Mock Test Result</a></li>
+        <li><a href="#">BCA Entrance Form</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card-row">
+    <div class="card">
+      <img src="../images/c.png" alt="Chairman">
+      <h3>Message From Chairman</h3>
+      <p>Dear Parents, Students and well-wishers... [your chairman message here]</p>
+    </div>
+    <div class="card">
+      <img src="../images/p.png" alt="Principal">
+      <h3>Message From Principal</h3>
+      <p>Warm Greetings from Lumbini ICT Campus! ... [your principal message here]</p>
+    </div>
+  </div>
+
+</body>
+</html>
